@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;0,800;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Adicionado para evitar problemas de dimensionamento */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #2dd2ff;
+    font-family: 'Nunito', sans-serif; /* Aplicar fonte globalmente */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav {
+    width: 100%;
+    height: auto; /* Alterado para altura automática */
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around; /* Alterado o nome da propriedade e removido padding fixo */
+    align-items: center; /* Adicionado para centralizar verticalmente */
+    padding: 20px 5%; /* Ajustado o padding para ser mais responsivo */
+}
+
+.nav ul a {
+    color: #77f8ec;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.nav ul li:hover {
+    animation: moveUp 2s ease-in-out;
+    a {
+        color: #FFF;
+    }
+}
+
+#img-principal {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5%);
+    }
+}
+
+@keyframes moveUp {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    #img-principal {
+        margin-top: 30px;
+    }
+}
