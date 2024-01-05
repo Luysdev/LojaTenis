@@ -40,8 +40,15 @@
         foreach ($listItems as $item){
             ?>
             <div class="container-product">
-                <a href=""><img width="150px" src="<?php echo $item['image']; ?>" alt=""></a>
-                <p><?php echo $item['name']; ?></p>
+                <div class="product">
+                    <a href=""><img width="130px" src="<?php echo $item['image']; ?>" alt=""></a>
+                    <div class="product-price-name">
+                        <p><?php echo $item['name']; ?></p>
+                        <p><?php echo '$' .  $item['price']; ?></p>
+                    </div>
+
+                </div>
+
             </div>
         <?php } ?>
     </div>

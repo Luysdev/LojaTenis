@@ -4,6 +4,7 @@ require_once __DIR__ . '/../model/produto.php';
 
 class CtrllProduto
 {
+
     function getByCartTrue()
     {
         $pd = new Produto();

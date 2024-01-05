@@ -14,6 +14,21 @@ class Produto extends Model {
 
     private $cart;
 
+    function addToCart($id)
+    {
+        try {
+            $query = $this->prepare("UPDATE produto SET cart = :cart WHERE id = :id");
+            $query->execute([
+                'id' => $id,
+                'cart' => 1
+            ]);
+            return true;
+        }catch (PDOException $e){
+            echo $e;
+            return false;
+        }
+    }
+
     function getByCartTrue()
     {
         try {
@@ -29,12 +44,13 @@ class Produto extends Model {
     function create($name,$price,$image,$collection)
     {
         try {
-            $query = $this->prepare("INSERT INTO produto (name,price,image,collection,cart) VALUES (:name,:price,:image, :collection,0)");
+            $query = $this->prepare("INSERT INTO produto (name,price,image,collection,cart) VALUES (:name,:price,:image, :collection,:cart)");
             $query->execute([
                'name' => $name,
                 'price' => $price,
                 'image' => $image,
                 'collection' => $collection,
+                'cart' => 0
             ]);
             return true;
 
