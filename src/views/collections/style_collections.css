@@ -80,6 +80,7 @@ ul {
 
 }
 
+
 .product {
     display: flex;
     align-items: center;
@@ -116,6 +117,15 @@ ul {
 
 }
 
+.product-cart {
+    width: 30px;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+    left: 110px;
+
+
+}
 
 
 

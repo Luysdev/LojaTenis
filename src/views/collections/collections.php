@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Colletions</title>
     <link rel="stylesheet" href="style_collections.css">
+
 </head>
 <body>
 <div class="container-grid-collections">
@@ -41,8 +42,9 @@
             ?>
             <div class="container-product">
                 <div class="product">
+                    <div class="product-cart"><a href="addCart.php"><img width="16px" src="../../img/shopping-cart-icon-512x462-yrde1eu0.png" alt=""></a></div>
                     <a href=""><img width="130px" src="<?php echo $item['image']; ?>" alt=""></a>
-                    <div class="product-price-name">
+                    <div  class="product-price-name">
                         <p><?php echo $item['name']; ?></p>
                         <p><?php echo '$' .  $item['price']; ?></p>
                     </div>
@@ -55,4 +57,5 @@
 
 </div>
 </body>
+
 </html>
