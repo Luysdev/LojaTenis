@@ -42,7 +42,7 @@
             ?>
             <div class="container-product">
                 <div class="product">
-                    <div class="product-cart"><a href="addCart.php"><img width="16px" src="../../img/shopping-cart-icon-512x462-yrde1eu0.png" alt=""></a></div>
+                    <div class="product-cart"><a href="addCart.php?id=<?php echo $item['id']; ?>"><img width="16px" src="../../img/shopping-cart-icon-512x462-yrde1eu0.png" alt=""></a></div>
                     <a href=""><img width="130px" src="<?php echo $item['image']; ?>" alt=""></a>
                     <div  class="product-price-name">
                         <p><?php echo $item['name']; ?></p>

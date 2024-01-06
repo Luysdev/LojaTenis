@@ -4,6 +4,18 @@ require_once __DIR__ . '/../model/produto.php';
 
 class CtrllProduto
 {
+    function deleteCart()
+    {
+        $pd = new Produto();
+        $pd->addToCart($_GET['id']);
+    }
+
+
+    function addCart()
+    {
+        $pd = new Produto();
+        $pd->addToCart($_GET['id']);
+    }
 
     function getByCartTrue()
     {

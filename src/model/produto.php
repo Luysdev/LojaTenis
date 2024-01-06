@@ -14,6 +14,20 @@ class Produto extends Model {
 
     private $cart;
 
+    function deleteToCart($id)
+    {
+        try {
+            $query = $this->prepare("UPDATE produto SET cart = :cart WHERE id = :id");
+            $query->execute([
+                'id' => $id,
+                'cart' => 0
+            ]);
+            return true;
+        }catch (PDOException $e){
+            echo $e;
+            return false;
+        }
+    }
     function addToCart($id)
     {
         try {
