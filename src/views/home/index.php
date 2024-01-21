@@ -12,13 +12,13 @@
 <body>
     <div class="container-grid-home">
         <div class="nav">
-<!--            <img src="../../img/imgIcon1.png" width="0px" alt="">-->
+
             <ul>
-                <li><a href="./home.php">HOME</a></li>
-                <li><a href="../collections/collections.php">COLLECTIONS</a></li>
-                <li><a href="./home.php">FOR HIM</a></li>
-                <li><a href="./home.php">FOR HER</a></li>
-                <li><a href="./home.php">MORE INFORMATIONS</a></li>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="../collections/index.php">COLLECTIONS</a></li>
+                <li><a href="index.php">FOR HIM</a></li>
+                <li><a href="index.php">FOR HER</a></li>
+                <li><a href="index.php">MORE INFORMATIONS</a></li>
                 <li><a href="../cart/cart.php">CART</a></li>
             </ul>
         </div>

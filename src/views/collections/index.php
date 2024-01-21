@@ -15,7 +15,18 @@
 </head>
 <body>
 <div class="container-grid-collections">
-    <?php require "../components/nav.php"?>
+
+    <div class="nav">
+
+        <ul>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="../collections/index.php">COLLECTIONS</a></li>
+            <li><a href="index.php">FOR HIM</a></li>
+            <li><a href="index.php">FOR HER</a></li>
+            <li><a href="index.php">MORE INFORMATIONS</a></li>
+            <li><a href="../cart/cart.php">CART</a></li>
+        </ul>
+    </div>
 
     <!-- TITULO DE APRESENTACAO  -->
     <div class="titulo">

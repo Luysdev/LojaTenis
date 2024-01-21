@@ -21,6 +21,7 @@ body {
 }
 
 
+
 a {
     text-decoration: none;
     color: inherit;
@@ -28,6 +29,30 @@ a {
 
 ul {
     list-style: none;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.nav ul a {
+    color: #77f8ec;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.nav ul li:hover {
+    animation: moveUp 2s ease-in-out;
+    a {
+        color: #FFF;
+    }
 }
 
 

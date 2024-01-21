@@ -6,3 +6,4 @@ $ctrrl = new CtrllProduto();
 
 $ctrrl->addCart();
 
+header('Location: index.php');
