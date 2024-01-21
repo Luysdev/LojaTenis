@@ -7,7 +7,7 @@ class CtrllProduto
     function deleteCart()
     {
         $pd = new Produto();
-        $pd->addToCart($_GET['id']);
+        $pd->deleteToCart("");
     }
 
 

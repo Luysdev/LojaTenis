@@ -30,45 +30,7 @@ ul {
     list-style: none;
 }
 
-.nav {
-    width: 100%;
-    height: auto;
-    background: #055688;
-}
 
-.nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 5%;
-}
-
-.nav ul a {
-    color: #009cff;
-    font-size: 18px;
-    font-weight: 800;
-}
-
-.nav ul li:hover {
-    animation: moveUp 2s ease-in-out;
-    a {
-        color: #FFF;
-    }
-}
-
-
-/*.collection-name {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-
-/*    color: #0798F3;*/
-/*    font-family: 'Open Sans', sans-serif;*/
-/*    font-size: 128px;*/
-/*    font-style: normal;*/
-/*    font-weight: 700;*/
-/*    line-height: normal;*/
-/*    letter-spacing: 30px;*/
-/*}*/
 
 .container-product {
     width: 250px;

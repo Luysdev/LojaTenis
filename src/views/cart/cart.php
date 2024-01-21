@@ -12,16 +12,17 @@
     <title>Cart</title>
 </head>
 <body>
-    <div>
-        <?php
-            $ctrll = new Produto();
-            $list = $ctrll->getByCartTrue();
-
-            foreach ($list as $item){
-                echo $item['name'];
-            }
-            ?>
-    </div>
+<!--    <div>-->
+<!--        --><?php
+//            $ctrll = new Produto();
+//            $list = $ctrll->getByCartTrue();
+//
+//            foreach ($list as $item){
+//                echo $item['name'];
+//            }
+//            ?>
+<!--    </div>-->
     <h1>CART</h1>
+
 </body>
 </html>

@@ -15,15 +15,7 @@
 </head>
 <body>
 <div class="container-grid-collections">
-    <div class="nav">
-        <ul>
-            <li><a href="../home/home.php">Home</a></li>
-            <li><a href="../collections/collections.php">Collections</a></li>
-            <li><a href="./home.php">For Him</a></li>
-            <li><a href="./home.php">For Her</a></li>
-            <li><a href="./home.php">More information</a></li>
-        </ul>
-    </div>
+    <?php require "../components/nav.php"?>
 
     <!-- TITULO DE APRESENTACAO  -->
     <div class="titulo">

@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . "/../db/model.php";
+include  __DIR__ . "/../db/model.php";
 
 class Produto extends Model {
 
